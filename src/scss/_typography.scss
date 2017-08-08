@@ -1,0 +1,364 @@
+@font-face {
+    font-family: 'Mission Script';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Mission Script'), url('fonts/Mission-Script.woff') format('woff');
+}
+
+$Lato: 'Lato', Arial, Helvetica, sans-serif;
+$Mission: 'Mission Script', cursive;
+
+*, body {
+  font-family: $Lato;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $Mission;
+}
+
+h1, h3 {
+  color: $blue;
+  font-family: $Mission;
+  font-weight: normal;
+}
+
+h4 {
+  font-family: $Lato;
+}
+ul li {
+  list-style-type: none;
+}
+
+a {
+  color: $blue;
+  transition: all 0.2s;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($blue,10%);
+    cursor: pointer;
+  }
+}
+
+p {
+  color: $gray;
+  font-family: $Lato;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 2.2rem;
+  margin-bottom: 3rem;
+  margin-top: 0;  
+
+  @include breakpoint(medium down){
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+  a {
+    color: $blue;
+
+    &:hover {
+      color: $darkBlue;
+    }
+  }
+}
+
+section li {
+  color: $gray;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.header {
+  text-align: center;
+  h3 {
+    color: $blue;
+    font-size: 4rem;
+    margin-bottom: 0;
+    line-height: 3.5rem;
+    margin-top: 35px;
+
+    @media all and (max-width:1024px){
+     line-height: 4rem; 
+     font-size: 3.5rem;
+    }
+  }
+
+  h4 {
+    color: $gray;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    margin-bottom: 60px;
+  }
+
+  h5 {
+    color: $gray;
+    font-family: $Lato;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-top: 0;
+    line-height: 1.6rem;
+    margin-bottom: 20px;
+  }
+}
+
+.alignleft {
+    float: left;
+    margin:0 15px 30px 0;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 30px auto;
+}
+.alignright {
+    float: right;
+    margin:0 0 30px 15px;
+}
+.alignnone {
+    float: none;
+    display:block;
+    margin:0 0 30px 0;
+}
+.size-full {
+    width:100%;
+    height:auto;
+    margin:0 0 30px 0;
+}
+p .alignleft {
+    float: left;
+    margin:30px 30px 30px 0;
+}
+p .aligncenter {
+    display: block;
+    margin: 30px auto 30px auto;
+}
+p .alignright {
+    float: right;
+    margin:30px 0 30px 30px;
+}
+p .alignnone {
+    float: none;
+    display:block;
+    margin:30px 0 30px 0;
+}
+p .size-full {
+    width:100%;
+    height:auto;
+    margin:30px 0 30px 0;
+}
+
+p.empty {
+    padding:0;
+    margin:0;
+    line-height:0;
+}
+
+.gallery:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+.post-content {
+  background: transparent;
+  color:#666;
+  border-collapse:separate;
+  border-spacing:0;
+  margin:20px 0;
+}
+.post-content .wp-caption-text {
+  font-size: 1rem;
+  margin-top: -40px;
+  margin-bottom: 20px;
+}
+.post-content table {
+  width: 100%;
+  display:block;
+  clear: both;
+  margin:30px 0;
+}
+.post-content td:nth-child(odd) {
+  background:#eee;
+}
+.post-content td:nth-child(even) {
+  background:transparent;
+}
+.post-content thead td:nth-child(odd) {
+  background:#4d4d4d !important;
+}
+.post-content thead td {
+  background:#555 !important;
+   text-transform:none;
+  letter-spacing:0;
+  padding:9px 7px;
+  text-align:center;
+  vertical-align:top;
+}
+.post-content td {
+  text-align:center;
+  vertical-align:top;
+  padding:9px 7px;
+}
+
+*::selection {
+  background: rgba(105,187,245,0.8);
+  color: #FFF;
+  padding: 5px;
+}
+
+mark {
+  color: $blue;
+  background: none;
+}
+
+.post-content {
+  padding-top: 30px;
+
+
+  .wp-caption{
+    border:none;
+    text-align:center;
+    background:$lightGray;
+    padding:10px 10px 10px 10px;
+    margin:0 0 30px 0;
+    border-radius:4px;
+    -webkit-box-shadow:0px 2px 3px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow:0px 2px 3px 0px rgba(0,0,0,0.3);
+    box-shadow:0px 2px 3px 0px rgba(0,0,0,0.3);
+    -moz-transform:rotate(-1deg);
+    -webkit-transform:rotate(-1deg);
+    -o-transform:rotate(-1deg);
+    transform:rotate(-1deg);
+    margin-bottom: 30px;
+  }
+
+  *::selection {
+    background: rgba(105,187,245,0.8);
+    color: #FFF;
+    padding: 5px;
+  }
+
+  .wp-caption-text{
+    text-align:center;
+    padding-top:10px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $Lato;
+  }
+
+  h1.post-title {
+    font-size: 3rem;
+    margin-top: 0px;
+    margin-bottom: 1rem;
+  }
+
+  h2.post-date {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  p {
+    font-weight: normal;
+  }
+
+  address {
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 30px;
+  }
+
+  ul li {
+    list-style-type: disc;
+  }
+
+  ol li {
+    
+  }
+
+  blockquote {
+    font-style: italic;
+  }
+
+  .featured-image-wrapper {
+    padding: 0;
+    margin: 30px 0;
+    // width: 33%;
+
+
+    @media all and(max-width:1024px){
+      width: 100%;
+    }
+  }
+
+  .author {
+    margin-bottom: 0;
+    text-transform: capitalize;
+  }
+}
+
+.all-posts {
+
+  h3.post-title {
+    margin-bottom: 0;
+    font-size: 1.6rem;
+    margin-top: 0;
+    font-weight: bold;
+  }
+
+  h4.date {
+    font-size: 1.2rem;
+    margin-top: 0;
+    color: $blue;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+  h3.post-title a{
+    color: #424242;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+.albums {
+  text-align: center;
+
+  h3.post-title a{
+    font-weight: bold;
+    color: $darkGray;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+  }
+
+  h4.date {
+    color: $gray;
+    margin-top: -1rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.album-content {
+
+  h1 {
+    font-family: $Mission;
+  }
+
+  .image-container {
+    margin-bottom: 30px;
+  }
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.single-albums .top-header {
+
+display: none;
+}

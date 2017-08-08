@@ -1,0 +1,21 @@
+.button {
+	transition: all 0.2s;
+	display: block;
+	width: 100%;
+	max-width: 275px;
+	background: $blue;
+	color: #FFF;
+	text-align: center;
+	font-size: 1.2rem;
+	border-radius: 50px;
+	background: $blue;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #FFF;
+	padding: 10px;
+
+	&:hover {
+		background: darken($blue,10%);
+		color: #FFF;
+	}
+}
