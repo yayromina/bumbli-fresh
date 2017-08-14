@@ -6,6 +6,8 @@ Boilerplate for Wordpress themes built by Bumbli.
 This package uses:
 * Foundation - for flex grid and other ui elements
 * Gulp for task management
+* SASS as a CSS pre-processor
+* Livereload
 
 
 ## Installation
